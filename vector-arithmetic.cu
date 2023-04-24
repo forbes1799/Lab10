@@ -18,7 +18,7 @@ int main(void){
 		y[i] = 7 * i;
 	}
 
-	//task to be performed by GPU
+	//task to be performed by GPU. WHen converting to CUDA code, remember to give the return type (void)
 	for(int i = 0; i < num; i++){
 		z[i] = A * x[i] + y[i];
 	}
